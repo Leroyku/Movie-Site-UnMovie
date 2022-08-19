@@ -1,5 +1,6 @@
 import { getMovieInformation } from './get_movie.js';
 import { saveBookmark } from './bookmarks.js';
+import { bookmarksPage } from './navigation_bar.js';
 
 const API_URL_SEARCH_BY_ID =
     'https://kinopoiskapiunofficial.tech/api/v2.2/films/';
@@ -464,7 +465,7 @@ const showMovie = {
         // const moviesContainer = document.querySelector('.movies');
         const dataShow = data.films ? data.films : data.items;
 
-        if (dataShow != null || dataShow.length > 2) {
+        if (dataShow != null && dataShow.length > 0) {
             for (; dataShow.length > 0; ) {
                 const lineMovieContainer = document.createElement('div');
                 lineMovieContainer.classList.add('movie-line-container');
@@ -590,7 +591,7 @@ const showMovie = {
                     }
                 });
             });
-        } else {
+        } else if (bookmarksPage) {
             const moviesElement = document.createElement('div');
 
             moviesElement.innerHTML = '';
