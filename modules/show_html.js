@@ -267,7 +267,7 @@ const showMovie = {
         if (!parentCheck) {
             newParent.after(infContId);
 
-            if (newParent != document.querySelector('.movie-list-wrapper')) {
+            if (newParent.classList[0] != 'movie-list-wrapper') {
                 parentMovieWrapper = newParent;
             }
         }
@@ -289,7 +289,7 @@ const showMovie = {
 
             parentCheck = false;
 
-            if (newParent != document.querySelector('.movie-list-wrapper')) {
+            if (newParent.classList[0] != 'movie-list-wrapper') {
                 parentMovieWrapper = newParent;
             }
         }
