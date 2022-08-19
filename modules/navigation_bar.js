@@ -30,6 +30,7 @@ navBar.addEventListener('click', e => {
     const searchEl = e.target.closest('.search');
     if (searchEl) {
         search.value = '';
+        bookmarksPage = false;
 
         addAndDeleteClassHidden(searchBox, contMenu);
         document
@@ -43,6 +44,7 @@ navBar.addEventListener('click', e => {
     const mobileSearchBtn = e.target.closest('.search-btn-profile');
     if (mobileSearchBtn) {
         search.value = '';
+        bookmarksPage = false;
 
         // addAndDeleteClassHidden(searchBox, mobileSearchBtn);
 
