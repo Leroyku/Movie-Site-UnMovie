@@ -7,8 +7,9 @@ import {
 
 // const API_KEY = 'e1594228-332b-4db0-8554-7e2c42c4b530';
 // const API_KEY = 'af0465c7-161f-4632-99ea-b93e362970d4';
-const API_KEY = '7bb180fa-4392-4a8c-88b9-49745d02704f';
-// const API_KEY = '231dba0f-0813-49da-bf2a-d97a82adab9e';
+// const API_KEY = '7bb180fa-4392-4a8c-88b9-49745d02704f';
+const API_KEY = '231dba0f-0813-49da-bf2a-d97a82adab9e';
+// const API_KEY = 'fc112365-dbfd-4e11-8c9c-65d088c6b6b3';
 
 const API_URL_MOVIE = `https://kinopoiskapiunofficial.tech/api/v2.2/films?order=RATING&type=FILM&ratingFrom=7&ratingTo=10&yearFrom=1000&yearTo=3000&page=1`;
 const API_URL_SERIES = `https://kinopoiskapiunofficial.tech/api/v2.2/films?order=RATING&type=TV_SERIES&ratingFrom=7&ratingTo=10&yearFrom=1000&yearTo=3000&page=1`;
