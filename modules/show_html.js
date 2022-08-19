@@ -464,7 +464,7 @@ const showMovie = {
         // const moviesContainer = document.querySelector('.movies');
         const dataShow = data.films ? data.films : data.items;
 
-        if (dataShow != null || dataShow.length <=2) {
+        if (dataShow != null || dataShow.length > 2) {
             for (; dataShow.length > 0; ) {
                 const lineMovieContainer = document.createElement('div');
                 lineMovieContainer.classList.add('movie-line-container');
