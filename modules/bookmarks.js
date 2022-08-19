@@ -1,5 +1,7 @@
 import { showMovieFromHeader } from './show_html.js';
 
+const mainContainer = document.querySelector('.container');
+
 let bookmarksPage = false;
 
 const bookmark = {
@@ -18,6 +20,7 @@ const bookmark = {
         // console.log(localStorage.getItem('bookmarks').length);
 
         if (
+            !localStorage.getItem('bookmarks') ||
             localStorage.getItem('bookmarks') === null ||
             localStorage.getItem('bookmarks').length === 2
         ) {
