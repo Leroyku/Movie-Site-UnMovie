@@ -1,8 +1,7 @@
 import { showMovieFromHeader } from './show_html.js';
+import { bookmarksPage } from './navigation_bar.js';
 
 const mainContainer = document.querySelector('.container');
-
-let bookmarksPage = false;
 
 const bookmark = {
     saveBookmark(data) {
