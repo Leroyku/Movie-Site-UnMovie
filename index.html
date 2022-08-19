@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html class="light">
+    <head>
+        <meta charset="utf-8" />
+        <title>UnMovie</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+        <link rel="icon" href="./img/favicon.ico" type="images/x-icon" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/css/style.css" />
+        <script
+            defer
+            src="https://kit.fontawesome.com/02d69d1eb5.js"
+            crossorigin="anonymous"
+        ></script>
+        <script defer type="module" src="test.js"></script>
+        <svg style="display: none">
+            <symbol id="searchId" viewBox="0 0 30 30">
+                <g>
+                    <path
+                        d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"
+                    />
+                </g>
+            </symbol>
+            <symbol id="closeId" viewBox="0 0 24 24">
+                <g>
+                    <path
+                        d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z"
+                    />
+                </g>
+            </symbol>
+        </svg>
+    </head>
+    <body>
+        <header class="header">
+            <div class="navbar">
+                <div class="navbar-container">
+                    <div class="logo-container">
+                        <img class="logo" src="/img/logo.png" alt="" />
+                        <!-- <a href="index.html" class="logo">UnMovie</a> -->
+                    </div>
+                    <div class="menu-container">
+                        <div class="menu-list">
+                            <div class="menu-list-item home-btn active">
+                                Главная
+                            </div>
+                            <div class="menu-list-item movie-btn">Фильмы</div>
+                            <div class="menu-list-item series-btn">Сериалы</div>
+                            <div class="menu-list-item popular-btn">
+                                Популярные
+                            </div>
+                            <div class="search">Поиск</div>
+                        </div>
+                    </div>
+                    <div class="search-container hidden">
+                        <div class="search-box">
+                            <input
+                                type="text"
+                                class="header__search"
+                                placeholder="Type to search"
+                            />
+
+                            <!-- <div class="search-btn">
+                                <i class="fa-solid fa-magnifying-glass"></i> -->
+                            <div class="search-btn">
+                                <svg class="btn__icon">
+                                    <use xlink:href="#searchId"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="close-btn">
+                            <svg class="btn__icon-close">
+                                <use xlink:href="#closeId"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="profile-container">
+                        <div class="search-btn-profile">
+                            <svg class="btn__icon-profile">
+                                <use xlink:href="#searchId"></use>
+                            </svg>
+                        </div>
+                        <a class="profile-bookmarks">
+                            <i class="fas fa-bookmark"></i>
+                        </a>
+                        <div class="toggle" id="light">
+                            <i class="fas fa-moon toggle-icon"></i>
+                            <i class="fas fa-sun toggle-icon"></i>
+                            <div class="toggle-ball"></div>
+                        </div>
+                        <div class="mobile-menu">
+                            <i class="fa-solid fa-bars"></i>
+                            <div class="menu-down hidden-mobile">
+                                <ul class="menu-down-items">
+                                    <li class="menu-down-item mobile-home-btn">
+                                        Главная
+                                    </li>
+                                    <li class="menu-down-item mobile-movie-btn">
+                                        Фильмы
+                                    </li>
+                                    <li
+                                        class="menu-down-item mobile-series-btn"
+                                    >
+                                        Сериалы
+                                    </li>
+                                    <li
+                                        class="menu-down-item mobile-popular-btn"
+                                    >
+                                        Популярные
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container"></div>
+    </body>
+</html>
