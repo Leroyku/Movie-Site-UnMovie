@@ -22,7 +22,7 @@ const bookmark = {
         if (
             !localStorage.getItem('bookmarks') ||
             localStorage.getItem('bookmarks') === null ||
-            localStorage.getItem('bookmarks').length === 2
+            localStorage.getItem('bookmarks').length <= 2
         ) {
             let bookmarks = [];
             bookmarks.push(bookmark);
