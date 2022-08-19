@@ -319,7 +319,7 @@ const showMovie = {
             // selectInformationMovieContainer.style.transform = 'translateY(-50%)';
             selectRandomMovie = undefined;
             parentCheck = true;
-            if (newParent != document.querySelector('.movie-list-wrapper')) {
+            if (!e.target.closest('.movie-list-container')) {
                 wrapMovie(parentMovieWrapper, 'closeButton');
             }
             selectInformationMovieContainers.remove();
