@@ -1,5 +1,4 @@
 import { getHeaderMovies } from './get_movie.js';
-import { bookmarksPage } from './navigation_bar.js';
 
 const API_URL_SEARCH =
     'https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword?keyword=';
@@ -12,7 +11,6 @@ const searchObj = {
     searchMovie() {
         const apiSearchURL = `${API_URL_SEARCH}${search.value}`;
         if (search.value) {
-            bookmarksPage = false;
             getHeaderMovies(apiSearchURL);
         }
     },
